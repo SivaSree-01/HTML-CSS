@@ -23,7 +23,7 @@ body {
 }
 
 .logo {
-    font-size: 40px;
+    font-size: 30px !important;
     text-decoration: overline;
     text-transform: uppercase;
     font-weight: bold;
@@ -47,7 +47,7 @@ body {
 .nav-links li a {
     text-decoration: none;
     color: #3f043d;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     display: inline-block;
     transition: transform 0.3s, color 0.3s;
