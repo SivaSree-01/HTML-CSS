@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff66b2;
+    background-color:#ff66b2;
     padding: 15px 40px;
     position: fixed;
     width: 100%;
@@ -30,7 +30,6 @@ body {
     color: #3f043d;
     transition: color 0.3s, transform 0.3s;
 }
-
 .logo:hover {
     color: #ffffff;
     transform: scale(1.1);
@@ -42,11 +41,9 @@ body {
     display: flex;
     gap: 50px;
 }
-
 .nav-links li {
     display: inline-block;
 }
-
 .nav-links li a {
     text-decoration: none;
     color: #3f043d;
@@ -55,30 +52,55 @@ body {
     display: inline-block;
     transition: transform 0.3s, color 0.3s;
 }
-
 .nav-links li a:hover {
     color: #ffffff;
     transform: scale(1.3);
 }
-
-#home :hover{
-    cursor: pointer
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 header {
+    padding-top: 80px;
+    margin-top: -30px; 
+}
+header {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/028/556/601/non_2x/seamless-pattern-with-glamorous-trendy-pink-clothing-bag-swimwear-shoes-flat-illustration-on-white-background-nostalgic-pinkcore-2000s-style-collection-valentines-day-vector.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     text-align: center;
-    padding: 150px 20px 50px;
-    background-color: #ff99cc;
+    padding-bottom: 50px;
 }
 header h1 {
-    font-size: 36px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #3f043d;
+    background: rgba(255, 179, 217, 0.9);
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 header p {
-    font-size: 20px;
-}
-header h1, header p {
-    display: inline-block; 
-    transition: transform 0.3s, color 0.3s;
+    font-size: 18px;
+    color: #3f043d;
+    background: rgba(255, 179, 217, 0.9);
+    padding: 5px 15px;
+    border-radius: 10px;
 }
 
 #features {
@@ -117,9 +139,6 @@ header h1, header p {
     padding: 60px 20px;
     background-color: #f1a7ce;
 }
-#gallery :hover{
-    cursor: pointer
-}
 .gallery-container {
     display: flex;
     justify-content: center;
@@ -141,7 +160,6 @@ header h1, header p {
     text-align: center;
     padding: 50px 20px;
     background-color: #ff99cc;
-
 }
 #signup-form input {
     padding: 10px;
@@ -171,9 +189,6 @@ footer {
     padding: 20px;
     font-size: 18px;
 }
-footer :hover{
-    cursor: pointer
-}
 
 @keyframes fadeIn {
     0% { opacity: 0; transform: translateY(-20px); }
@@ -195,9 +210,3 @@ header h1, header p {
     opacity: 0; 
     animation: fadeZoomIn 1.5s ease-in-out forwards;
 }
-
-
-
-
-
-
